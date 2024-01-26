@@ -1,12 +1,3 @@
-import './App.css';
-import Game from './components/game';
-
-function App() {
-  return (
-    <div className="App">
-      <Game/>
-    </div>
-  );
+export default function Square(){
+  return <button className="square"> X </button> 
 }
-
-export default App;
