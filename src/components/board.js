@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Square from "./square";
 import CalculateWinner from "./calculateWinner";
 
@@ -13,7 +13,7 @@ export default function Board({xIsNext, squares, onPlay}) {
       }
 
       const nextSquares = squares.slice(); //creates a copy of squares array
-      
+
        if(xIsNext){
          nextSquares[i] = "X";
         }else{
